@@ -50,9 +50,10 @@ namespace Password_Manager
             this.button1.Location = new System.Drawing.Point(35, 97);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Retour";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -60,7 +61,7 @@ namespace Password_Manager
             this.textBox1.Location = new System.Drawing.Point(35, 49);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(361, 32);
-            this.textBox1.TabIndex = 2;
+            this.textBox1.TabIndex = 1;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button2
@@ -68,7 +69,7 @@ namespace Password_Manager
             this.button2.Location = new System.Drawing.Point(321, 97);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
+            this.button2.TabIndex = 2;
             this.button2.Text = "Valider";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -82,8 +83,12 @@ namespace Password_Manager
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(435, 171);
+            this.MinimumSize = new System.Drawing.Size(435, 171);
             this.Name = "ChangerMain";
-            this.Text = "ChangerMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Changer Mot de passe principale - Gestionnaire de mot de passe";
             this.ResumeLayout(false);
             this.PerformLayout();
 

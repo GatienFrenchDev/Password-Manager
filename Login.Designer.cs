@@ -39,7 +39,7 @@ namespace Password_Manager
             this.textBox1.Location = new System.Drawing.Point(246, 20);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(191, 32);
-            this.textBox1.TabIndex = 0;
+            this.textBox1.TabIndex = 1;
             this.textBox1.UseSystemPasswordChar = true;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -50,7 +50,7 @@ namespace Password_Manager
             this.label1.Location = new System.Drawing.Point(24, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(216, 25);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Mot de passe principale :";
             // 
             // Login
@@ -60,7 +60,11 @@ namespace Password_Manager
             this.ClientSize = new System.Drawing.Size(465, 70);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(481, 109);
+            this.MinimumSize = new System.Drawing.Size(481, 109);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Connexion - Gestionnaire de mot de passe";
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);

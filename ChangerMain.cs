@@ -27,10 +27,21 @@ namespace Password_Manager
             else
             {
                 String fichier_mdp = File.ReadAllText(@"C:\Users\"+Environment.UserName+@"\Desktop\pass.jpg");
-                fichier_mdp.Split('²')[0] = textBox1.Text;
-                File.WriteAllText(@"C:\Users\" + Environment.UserName + @"\Desktop\pass.jpg", fichier_mdp);
+                String[] contenu_fichier = fichier_mdp.Split('²');
+                contenu_fichier[0] = textBox1.Text;
+                File.WriteAllText(@"C:\Users\" + Environment.UserName + @"\Desktop\pass.jpg", string.Join("²", contenu_fichier));
                 MessageBox.Show("Mot de passe principale changé avec succès !");
+                this.Hide();
+                Menu menu = new Menu();
+                menu.Show();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
         }
     }
 }
