@@ -23,5 +23,19 @@ namespace Password_Manager
             chang.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Consulter consulter = new Consulter();
+            consulter.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Ajouter ajouter = new Ajouter();
+            ajouter.Show();
+            this.Hide();
+        }
     }
 }
