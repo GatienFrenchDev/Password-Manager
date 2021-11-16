@@ -29,6 +29,7 @@ namespace Password_Manager
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ajouter));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -150,9 +151,11 @@ namespace Password_Manager
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Ajouter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ajout | Gestionnaire de mot de passe";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ajouter_FormClosing);
             this.Load += new System.EventHandler(this.Ajouter_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

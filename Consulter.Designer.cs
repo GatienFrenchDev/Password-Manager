@@ -181,9 +181,11 @@ namespace Password_Manager
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Consulter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestionnaire de mot de passe";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Consulter_FormClosing);
             this.Load += new System.EventHandler(this.Consulter_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

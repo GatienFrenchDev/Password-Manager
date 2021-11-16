@@ -29,6 +29,7 @@ namespace Password_Manager
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(supp));
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -66,7 +67,7 @@ namespace Password_Manager
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(29, 125);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(261, 32);
+            this.comboBox1.Size = new System.Drawing.Size(234, 32);
             this.comboBox1.Sorted = true;
             this.comboBox1.TabIndex = 9;
             // 
@@ -75,21 +76,22 @@ namespace Password_Manager
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(71)))), ((int)(((byte)(94)))));
             this.button3.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F);
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-            this.button3.Location = new System.Drawing.Point(29, 226);
+            this.button3.Location = new System.Drawing.Point(278, 118);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(113, 41);
             this.button3.TabIndex = 11;
             this.button3.Text = "Retour";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(71)))), ((int)(((byte)(94)))));
             this.button2.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-            this.button2.Location = new System.Drawing.Point(375, 226);
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button2.Location = new System.Drawing.Point(412, 118);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(172, 41);
+            this.button2.Size = new System.Drawing.Size(178, 39);
             this.button2.TabIndex = 13;
             this.button2.Text = "Supprimer";
             this.button2.UseVisualStyleBackColor = false;
@@ -100,16 +102,18 @@ namespace Password_Manager
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(560, 299);
+            this.ClientSize = new System.Drawing.Size(602, 177);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "supp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Suppresion | Gestionnaire de mot de passe";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.supp_FormClosing);
             this.Load += new System.EventHandler(this.supp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

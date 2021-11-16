@@ -22,6 +22,8 @@ namespace Password_Manager
         {
             String fichier_mdp = File.ReadAllText(@"C:\Users\" + Environment.UserName + @"\Desktop\pass.jpg");
             String[] list = fichier_mdp.Split(new[] { "}}}" }, StringSplitOptions.None);
+
+
             if (comboBox1.Text != "")
             {
                 int i;
@@ -30,9 +32,27 @@ namespace Password_Manager
                 {
                     if (comboBox1.Text == (list[i].Split(new[] { "{{{" }, StringSplitOptions.None)[0]))
                     {
-                        list = list.Skip(i).ToArray();
+
+                        list = list.Where(w => w != list[i]).ToArray();
+
                         MessageBox.Show("Site supprimé avec succès !");
-                        File.WriteAllText(@"C:\Users\" + Environment.UserName + @"\Desktop\pass.jpg", String.Concat(list));
+
+
+                        File.WriteAllText(@"C:\Users\" + Environment.UserName + @"\Desktop\pass.jpg", String.Join("}}}", list.ToArray()));
+
+
+                        //actualise la combobox
+                        comboBox1.Text = "";
+                        comboBox1.Items.Clear();
+                        fichier_mdp = File.ReadAllText(@"C:\Users\" + Environment.UserName + @"\Desktop\pass.jpg");
+                        list = fichier_mdp.Split(new[] { "}}}" }, StringSplitOptions.None);
+                        list = list.Skip(1).ToArray();
+
+                        for (i = 0; i < list.Count(); i++)
+                        {
+                            comboBox1.Items.Add(list[i].Split(new[] { "{{{" }, StringSplitOptions.None)[0]);
+                        }
+
                         return;
                     }
                 }
@@ -56,6 +76,18 @@ namespace Password_Manager
             {
                 comboBox1.Items.Add(list[i].Split(new[] { "{{{" }, StringSplitOptions.None)[0]);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
+        }
+
+        private void supp_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -54,5 +54,10 @@ namespace Password_Manager
             supp_.Show();
             this.Hide();
         }
+
+        private void Menu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
