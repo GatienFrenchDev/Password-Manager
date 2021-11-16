@@ -28,7 +28,7 @@ namespace Password_Manager
             {
                 String fichier_mdp = File.ReadAllText(@"C:\Users\"+Environment.UserName+@"\Desktop\pass.jpg");
                 String[] contenu_fichier = fichier_mdp.Split('²');
-                contenu_fichier[0] = textBox1.Text;
+                contenu_fichier[0] = Base64Encode(textBox1.Text);
                 File.WriteAllText(@"C:\Users\" + Environment.UserName + @"\Desktop\pass.jpg", string.Join("²", contenu_fichier));
                 MessageBox.Show("Mot de passe principale changé avec succès !");
                 this.Hide();
@@ -42,6 +42,12 @@ namespace Password_Manager
             this.Hide();
             Menu menu = new Menu();
             menu.Show();
+        }
+
+        public static string Base64Encode(string plainText)
+        {
+            var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
+            return System.Convert.ToBase64String(plainTextBytes);
         }
     }
 }
