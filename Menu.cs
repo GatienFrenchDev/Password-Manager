@@ -47,5 +47,12 @@ namespace Password_Manager
         {
              this.WindowState = FormWindowState.Minimized;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            supp supp_ = new supp();
+            supp_.Show();
+            this.Hide();
+        }
     }
 }
