@@ -125,9 +125,9 @@ namespace Password_Manager
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
             this.label4.Location = new System.Drawing.Point(12, 28);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(535, 44);
+            this.label4.Size = new System.Drawing.Size(553, 44);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Gestionnaire de mot de passe\r\n";
+            this.label4.Text = "Gestionnaire de mots de passe\r\n";
             // 
             // label5
             // 
@@ -169,7 +169,7 @@ namespace Password_Manager
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(560, 364);
+            this.ClientSize = new System.Drawing.Size(571, 364);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);

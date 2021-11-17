@@ -50,11 +50,11 @@ namespace Password_Manager
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-            this.label2.Location = new System.Drawing.Point(28, 33);
+            this.label2.Location = new System.Drawing.Point(16, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(535, 44);
+            this.label2.Size = new System.Drawing.Size(553, 44);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Gestionnaire de mot de passe\r\n";
+            this.label2.Text = "Gestionnaire de mots de passe\r\n";
             // 
             // label1
             // 
@@ -81,7 +81,7 @@ namespace Password_Manager
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " Gestionnaire de mot de passe";
+            this.Text = "Connexion | Gestionnaire de mots de pase";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);

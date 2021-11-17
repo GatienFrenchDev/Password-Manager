@@ -44,9 +44,9 @@ namespace Password_Manager
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
             this.label4.Location = new System.Drawing.Point(12, 23);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(535, 44);
+            this.label4.Size = new System.Drawing.Size(553, 44);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Gestionnaire de mot de passe\r\n";
+            this.label4.Text = "Gestionnaire de mots de passe\r\n";
             // 
             // label3
             // 
@@ -112,7 +112,7 @@ namespace Password_Manager
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "supp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Suppresion | Gestionnaire de mot de passe";
+            this.Text = "Suppresion | Gestionnaire de mots de passe";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.supp_FormClosing);
             this.Load += new System.EventHandler(this.supp_Load);
             this.ResumeLayout(false);

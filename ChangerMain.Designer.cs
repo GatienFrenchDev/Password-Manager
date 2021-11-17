@@ -90,9 +90,9 @@ namespace Password_Manager
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
             this.label2.Location = new System.Drawing.Point(30, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(392, 34);
+            this.label2.Size = new System.Drawing.Size(405, 34);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Gestionnaire de mot de passe";
+            this.label2.Text = "Gestionnaire de mots de passe";
             // 
             // ChangerMain
             // 
@@ -110,7 +110,7 @@ namespace Password_Manager
             this.MaximizeBox = false;
             this.Name = "ChangerMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mot de passe | Gestionnaire de mot de passe";
+            this.Text = "Mot de passe | Gestionnaire de mots de passe";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChangerMain_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();

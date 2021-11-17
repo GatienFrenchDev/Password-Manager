@@ -61,9 +61,9 @@ namespace Password_Manager
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
             this.label1.Location = new System.Drawing.Point(9, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(351, 30);
+            this.label1.Size = new System.Drawing.Size(363, 30);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Gestionnaire de mot de passe";
+            this.label1.Text = "Gestionnaire de mots de passe";
             // 
             // textBox1
             // 
@@ -140,7 +140,7 @@ namespace Password_Manager
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(364, 421);
+            this.ClientSize = new System.Drawing.Size(372, 421);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox3);
@@ -154,7 +154,7 @@ namespace Password_Manager
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Ajouter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ajout | Gestionnaire de mot de passe";
+            this.Text = "Ajout | Gestionnaire de mots de passe";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ajouter_FormClosing);
             this.Load += new System.EventHandler(this.Ajouter_Load);
             this.ResumeLayout(false);
