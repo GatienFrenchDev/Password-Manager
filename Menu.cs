@@ -59,5 +59,10 @@ namespace Password_Manager
         {
             Application.Exit();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("GatienFrenchDev sur GitHub\n\n© Password Manager version 1.0 - 2021\n\nCode source accesible ici :\nhttps://github.com/GatienFrenchDev/Password-Manager\n\nContact : contact@gatiendev.tk", "A propos");
+        }
     }
 }
