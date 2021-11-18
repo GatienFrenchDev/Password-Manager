@@ -24,5 +24,5 @@ Ce gestionnaire de mots de passe est gratuit et surtout Open Source. C'est à di
 
 ## Informations utiles 🧐
 Le mot de passe par défaut du logiciel est `admin`.
-Pour télécharger le logiciel rendez vous dans la section relase ou alors [cliquez ici](https://github.com/GatienFrenchDev/Password-Manager/releases/latest/Password.Manager.exe)
+Pour télécharger le logiciel rendez vous dans la section relase ou alors [cliquez ici](https://github.com/GatienFrenchDev/Password-Manager/releases/latest/Password.Manager.exe).
 Ce logiciel requiert l'installation du Framework Microsoft : `.net Framework 4.7.2`.
