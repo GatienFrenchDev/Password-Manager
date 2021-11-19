@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Password_Manager
 {
@@ -62,7 +63,20 @@ namespace Password_Manager
 
         private void button5_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("GatienFrenchDev sur GitHub\n\n© Password Manager version 1.0 - 2021\n\nCode source accesible ici :\nhttps://github.com/GatienFrenchDev/Password-Manager\n\nContact : contact@gatiendev.tk", "A propos");
+            MessageBox.Show("GatienFrenchDev sur GitHub\n\n© Password Manager version 1.1 - 2021\n\nCode source accesible ici :\nhttps://github.com/GatienFrenchDev/Password-Manager\n\nContact : contact@gatiendev.tk", "A propos");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog fileDialog = new SaveFileDialog();
+            fileDialog.Title = "Sauvegarde de la mot de passe";
+            fileDialog.Filter = "Image|*.jpg";
+            fileDialog.FileName = "sauvegarde.jpg";
+            if(fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                File.Copy(@"C:\Users\" + Environment.UserName + @"\Desktop\pass.jpg", fileDialog.FileName);
+                MessageBox.Show("Fichier sauvegardé avec succès !");
+            }
         }
     }
 }
